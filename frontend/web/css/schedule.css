@@ -1,0 +1,99 @@
+/* Календарь */
+.calendar{
+  background-color: #a8a8a8;
+  color: #1c1c1c;
+  font-size: inherit;
+  padding: .4em;
+  border: 0;
+  margin: 0;
+  border-radius: 3px;
+  margin-top: 9px;
+}
+
+/* Вывод текста расписания */
+
+/* Радиокнопки */
+   input[type="radio"] {
+  /* remove standard background appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* create custom radiobutton appearance */
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  padding: 4px;
+  /* background-color only for content */
+  background-clip: content-box;
+  border: 1px solid #919191;
+  background-color: #e7e6e7;
+  border-radius: 50%;
+}
+
+/* appearance for checked radiobutton #5ee026 зеленый!!!!*/
+input[type="radio"]:checked {
+  background-color: #ff87c5;
+}
+
+/* Места в зале */
+
+
+/* Custom dropdown */
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 9px; /* demo only */
+}
+
+.custom-dropdown select {
+  background-color: #a8a8a8;
+  color: #1c1c1c;
+  font-size: inherit;
+  padding: .4em;
+  padding-right: 2.5em; 
+  border: 0;
+  margin: 0;
+  border-radius: 3px;
+  text-indent: 0.01px;
+  text-overflow: '';
+  -webkit-appearance: button; /* hide default arrow in chrome OSX */
+}
+
+.custom-dropdown::before,
+.custom-dropdown::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.custom-dropdown::after { /*  Custom dropdown arrow */
+  content: "\25BC";
+  height: 1em;
+  font-size: .625em;
+  line-height: 1;
+  right: 1.2em;
+  top: 50%;
+  margin-top: -.5em;
+}
+
+.custom-dropdown::before { /*  Custom dropdown arrow cover */
+  width: 2em;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.custom-dropdown::before {
+  background-color: #9c9c9c;
+}
+
+.custom-dropdown::after {
+  color: #cccccc;
+}
+
+/* Кнопка покупки билетов */
+
+
+/* Для страниц film */
