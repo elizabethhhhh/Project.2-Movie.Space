@@ -70,14 +70,16 @@ return [
 
                 'addfeedbacks' => 'site/addfeedback',
                 'userfeedbacks' => 'site/userfeedbacks',
+                'feedback' => 'site/feedback',
 
 
 
 
-                'test1' => 'site/test1',
-                'test2' => 'site/test2',
+                'test1|questionpag' => 'site/test1',
+                'test2|accountt' => 'site/test2',
                 'test3' => 'site/test3',
-                'test4' => 'site/test4',
+                'test4|acount' => 'site/test4',
+                'test5|acountt' => 'site/test5',
 
                 'account' => 'site/account',
                 'question_page|questionpage' => 'site/questionpage',

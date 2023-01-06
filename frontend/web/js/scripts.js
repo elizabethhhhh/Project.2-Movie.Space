@@ -1,30 +1,3 @@
-/* Страницы schedule расписание*/
-document.getElementById('today').style.display = 'none';
-function today() {
-  document.getElementById('today').style.display = 'block';
-}
-
-document.getElementById('tomorrow').style.display = 'none';
-function tomorrow() {
-  document.getElementById('tomorrow').style.display = 'block';
-}
-
-/*
-document.getElementById('week').style.display = 'none';
-function week() {
-  document.getElementById('week').style.display = 'block';
-}
-*/
-
-/* Страницы schedule текст */
-document.getElementById("myselect").addEventListener("change", function(){
-    document.getElementById('mydiv').innerHTML = "Selected time for today: "+this.value;   
-});
-
-document.getElementById("myselect1").addEventListener("change", function(){
-    document.getElementById('mydiv').innerHTML = "Selected time for tomorrow: "+this.value;   
-});
-
 /* Страницы schedule зал */
 document.addEventListener('DOMContentLoaded', function() {        
   let places = document.querySelector('#places'),

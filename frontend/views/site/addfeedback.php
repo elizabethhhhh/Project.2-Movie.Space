@@ -15,6 +15,7 @@ use \yii\widgets\ActiveForm;
 <h1><?= Html::encode($this->title) ?></h1>
 <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>
 
+
 <div class="row">
     <div class="rw">
    <div class="col-lg-5">
@@ -53,6 +54,11 @@ use \yii\widgets\ActiveForm;
        
 
 <?php endif; ?>
+
+
+
+
+
 
 <style>
 .glow-button6 {

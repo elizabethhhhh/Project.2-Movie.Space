@@ -102,4 +102,17 @@ class SiteController extends Controller
 
         return $this->goHome();
     }
+
+
+
+    /**
+     * Displays questionpage page.
+     *
+     * @return mixed
+     */
+    public function actionDdd ()
+    {
+        return $this->render('ddd');
+    }
+
 }

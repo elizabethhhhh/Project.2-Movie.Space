@@ -8,7 +8,7 @@ use yii\helpers\Html;
 
 <h1 class="display-4"><center><font color="white">About cinema technology</h1></font>
     <p class="tab"></p>
-
+<a href="http://dip11/frontend/web/contact"><div class="glow-button14"><center>For partners</div></center></a>
 <div class="p1">
 <div class="row">
     <p><center>Movies in 4DX are action and spectacle</p>
@@ -66,6 +66,26 @@ display: none;
 a.bloggood-ru-ssilka:hover+div
 {
 display: block;
+}
+.glow-button14 {
+  position: absolute; 
+  top: 23%; left: 76%;
+  text-decoration: none;
+  display: inline-block;
+  padding: 6px;
+  margin: 1px 100px;
+  border-radius: 0.7rem;
+  box-shadow: inset 0 0 0.4em 0 #f54611, 0 0 0.5em 0 #f54611;
+  color: white;
+  border: .2rem solid #f54611;
+  width: 110px;
+  background-color: #de3602;
+}
+.glow-button14:hover {
+  box-shadow: 0 0 1em 0.2em #f54611;
+  opacity: .90;
+  color: white;
+  
 }
 </style>
 

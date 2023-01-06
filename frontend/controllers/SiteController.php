@@ -16,6 +16,7 @@ use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
 use frontend\models\AddFeedbackForm;
+use frontend\models\FeedbacksForm;
 use yii\data\Pagination;
 
 /**
@@ -345,7 +346,6 @@ class SiteController extends Controller
 
 
 
-
 /**
      * Displays test1 page.
      *
@@ -356,7 +356,7 @@ class SiteController extends Controller
         return $this->render('test1');
     }
 
-/**
+    /**
      * Displays test1 page.
      *
      * @return mixed
@@ -388,6 +388,39 @@ class SiteController extends Controller
 
 
 
+    /**
+     * Displays test5 page.
+     *
+     * @return mixed
+     */
+    public function actionTest5()
+    {
+        return $this->render('test5');
+    }
+
+
+
+
+
+    /**
+     * Displays feedback page.
+     *
+     * @return mixed
+     */
+    public function actionFeedback()
+    {
+        $model = new FeedbacksForm();
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
+            return $this->render('feedback', [
+                'model' => $model,
+            ]);
+        } else {
+            return $this->render('feedback', [
+                'model' => $model,
+            ]);
+        }
+    }
 
 
     /**

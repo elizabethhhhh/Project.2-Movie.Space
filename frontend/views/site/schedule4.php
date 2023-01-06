@@ -74,7 +74,38 @@
   </div>
 </body>
 
+<script>
+  /* Страницы schedule расписание*/
+  document.getElementById('today').style.display = 'none';
+  function today() {
+    document.getElementById('today').style.display = 'block';
+  }
 
+  document.getElementById('tomorrow').style.display = 'none';
+  function tomorrow() {
+    document.getElementById('tomorrow').style.display = 'block';
+  }
+
+  /*
+  document.getElementById('week').style.display = 'none';
+  function week() {
+    document.getElementById('week').style.display = 'block';
+  }
+  */
+
+  /* Страницы schedule текст */
+  document.getElementById("myselect").addEventListener("change", function(){
+      document.getElementById('mydiv').innerHTML = "Selected time for today: "+this.value;   
+  });
+
+  document.getElementById("myselect1").addEventListener("change", function(){
+      document.getElementById('mydiv').innerHTML = "Selected time for tomorrow: "+this.value;   
+  });
+
+
+
+
+  </script>
 <div class="block-right">
     <svg width="580" height="450" xmlns="http://www.w3.org/2000/svg" id="hall">
       <defs>
@@ -235,7 +266,7 @@
           <rect rx="4" id="svg_138" height="17" width="22" y="27.05729" x="357" stroke-opacity="null" stroke-width="0" fill="#737373" stroke="#000"/>
           <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="'Palatino Linotype', 'Book Antiqua', Palatino, serif" font-size="16" id="svg_139" y="41" x="198" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">80 ₴</text>
           <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="'Palatino Linotype', 'Book Antiqua', Palatino, serif" font-size="16" id="svg_140" y="41" x="294" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">90 ₴</text>
-          <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="'Palatino Linotype', 'Book Antiqua', Palatino, serif" font-size="16" id="svg_141" y="41" x="390" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">160 ₴</text>
+          <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="'Palatino Linotype', 'Book Antiqua', Palatino, serif" font-size="16" id="svg_141" y="41" x="390" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">170 ₴</text>
       </g>
     </svg>
 

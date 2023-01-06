@@ -9,7 +9,7 @@ use yii\bootstrap4\ActiveForm;
 use yii\captcha\Captcha;
 
 
-$this->title = 'Contact';
+$this->title = 'Form of ideas and working proposals';
 ?>
 <p class="tab"></p>
 <div class="site-contact">
@@ -18,35 +18,17 @@ $this->title = 'Contact';
 <div class="cont2">
     <div class="cont"><center>
         <p>
-            If you have business inquiries or other questions, please fill out the following form to contact us.
+            If you have business inquiries please fill out the following form to contact us.
         </p>
         <p>
-            We'd love to hear from you. All comments go to Movie Space owners and theater management. <br>They know exactly how to solve the problem and make your favorite movie theater even better.
+            We look forward to working with you. 
         </p>
         <p>
             Thank you.
         </p></center>
     </div>
 
-            <div class="cont"><center><p>Write to us on messenger: &nbsp &nbsp &nbsp
-                <a href="https://web.telegram.org/k/">
-                    <img src="images/airplane.png" width="50" height="50">
-                </a>&nbsp
-                <a href="https://www.viber.com/ru/">
-                    <img src="images/viber.png" width="50" height="50">
-                </a>&nbsp
-                <a href="https://www.messenger.com/?locale=ru_RU">
-                    <img src="images/messenger.png" width="50" height="50">
-                </a> 
-            </p></div>
             
-    <p><center>________________________________________________________________________</center></p>
-            <div class="cont"><center><p>Or to e-mail: &nbsp &nbsp &nbsp
-                <img src="images/email1.png" width="50" height="50">&nbsp movie.space@gmail.com</p></div>
-                
-    <p><center>________________________________________________________________________</center></p>
-
-             <div class="cont"><center><p>Schedule of the call center: <br> Mon-Fri - 9:00 to 21:00 <br> Fri-Nd - 9:00 to 22:00 </p></div>
     <p><center>________________________________________________________________________</p></center>
 
     <div class="cont1">
@@ -60,7 +42,7 @@ $this->title = 'Contact';
 
                     <?= $form->field($model, 'subject') ?>
 
-                    <?= $form->field($model, 'feedback')->textarea(['rows' => 6]) ?>
+                    <?= $form->field($model, 'proposal')->textarea(['rows' => 6]) ?>
 
                     <?= $form->field($model, 'verifyCode')->widget(Captcha::className(), [
                         'template' => '<div class="row"><div class="col-lg-3">{image}</div><div class="col-lg-6" style="margin-left:15%;">{input}</div></div>',
